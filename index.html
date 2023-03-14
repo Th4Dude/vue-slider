@@ -31,9 +31,8 @@
                 <!-- Thumbnails -->
 
                 <div class="thumbs">
-                    <div class="prev" @click="prevImages"></div>
                     <div class="next" @click="nextImages"></div>
-
+                    <div class="prev" @click="prevImages"></div>
                     <div class="thumb" v-for="(img,index) in slides" @click="selectImage(index)">
                         <img :src="img.image" alt="">
                     </div>
