@@ -44,7 +44,7 @@ createApp({
                 this.activeImages = this.slides.length - 1;
             }
         },
-        selectImage(index) {
+        selectionImage(index) {
             this.activeImages = index;
         }
     }

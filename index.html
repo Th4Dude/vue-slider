@@ -14,7 +14,7 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
+            <div class="slider-wrapper border" tabindex="0">
 
                 <!-- main img + text -->
 
@@ -33,8 +33,8 @@
                 <div class="thumbs">
                     <div class="next" @click="nextImages"></div>
                     <div class="prev" @click="prevImages"></div>
-                    <div class="thumb" v-for="(img,index) in slides" @click="selectImage(index)">
-                        <img :src="img.image" alt="">
+                    <div class="thumb" v-for="(img,index) in slides" @click="selectionImage(index)">
+                        <img v-bind:src="img.image" alt="">
                     </div>
 
                 <!-- Thumbnails -->
